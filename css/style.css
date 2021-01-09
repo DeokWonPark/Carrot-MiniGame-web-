@@ -1,0 +1,112 @@
+body{
+    background: black;
+}
+.inner{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    background-image: url('../img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70%;
+    max-height: 80%;
+    border-radius: 15px;
+}
+.inner .Btn{
+    border: 4px solid black;
+    width: 70px;
+    height: 55px;
+    border-radius: 10px;
+    background: rgb(248, 223, 190);
+    cursor: pointer;
+    transition: transform 300ms ease;
+    padding: 0;
+}
+.Btn:hover{
+    transform: scale(1.1);
+}
+.Btn i{
+    font-size: 23px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+}
+header .play,
+header .stop{
+    margin-top: 10px;
+}
+header .timer{
+    border: 4px solid black;
+    background: white;
+    font-size: 35px;
+    font-weight: 500;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 2px 20px;
+}
+header .remain{
+    color: white;
+    background: tomato;
+    font-size: 45px;
+    font-weight: 600;
+    border-radius: 50px;
+    margin-top: 10px;
+    padding: 5px 15px 10px 15px;
+    border: 3px solid black;
+}
+
+.content{
+    height: 50%;
+    position: relative;
+}
+
+.carrot,
+.bug
+{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    transition: transform 100ms ease;
+}
+.carrot:hover,
+.bug:hover{
+    transform: scale(1.1);
+}
+
+section .replay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    background: rgb(36, 36, 36);
+    opacity: 0.7;
+    border-radius: 20px;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content .replay button{
+    opacity: 1.0;
+    background: rgb(255, 217, 160);
+    margin-bottom: 20px;
+}
+.content .replay span{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    opacity: 1.0;
+    font-weight: 700;
+}
